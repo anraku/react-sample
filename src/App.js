@@ -1,11 +1,17 @@
-import React, { Component } from 'react'; // Import multiple exports
+import React, { Component, Fragment } from 'react'; // Import multiple exports
 import './App.css';
 import Counter from './component/Counter';
+import AlertBox from './component/AlertBox';
 
 class App extends Component {
   render() {
     return (
-      <Counter />
+      <Fragment>
+        <Counter />
+        <AlertBox>
+          <h1>You have pending notifications</h1>
+        </AlertBox>
+      </Fragment>
     );
   }
 }
