@@ -5,9 +5,7 @@ import Counter from './component/Counter';
 class App extends Component {
   render() {
     return (
-      <div>
-        <Counter />
-      </div>
+      <Counter />
     );
   }
 }
